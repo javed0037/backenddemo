@@ -1,0 +1,15 @@
+{
+    "dbcredentials": {
+        "user": "emojiuser",
+        "password": "emojiuserpassword",
+        "database": "EcommerceDb",
+        "address": "localhost",
+        "port": 27017
+    }
+}
+
+
+
+
+
+
