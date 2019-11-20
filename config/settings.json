@@ -1,6 +1,6 @@
 {
     "apiUrlV1": "/api/v1",
-    "port": 5000,
+    "port": 8545,
     "secret": "Good Things Take Time !!!!",
     "isMaintenance": false
 }

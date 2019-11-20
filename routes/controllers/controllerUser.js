@@ -38,7 +38,7 @@ async function register(req, res) {
     console.log('there are the error',error);
     return apiErrorRes(req, res, 'Send valid param!!!');
   }
-  const userData = await serviceUser.findOneUser({$or : [{email : req.body.email},{phone:req.body.phone}]});
+  const userData = await serviceUser.findOneUser({$and : [{email : req.body.email},{phone:req.body.phone}]});
   if (userData.statusCode === CONSTANTS.SUCCESS && userData.data.isDeleted == true) {
     return apiErrorRes(req, res, 'Your account is deactivated from admin. Please contanct to support.', CONSTANTS.DATA_NULL, CONSTANTS.DEACTIVE_STATUS);
   } else if (userData.statusCode === CONSTANTS.SUCCESS) {

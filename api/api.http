@@ -9,7 +9,7 @@ Content-type: application/json
     "about": "jhgdfh",
     "role": "user" ,
     "password" : "javed@123",
-    "phone": "90223580",
+    "phone": "902112135480",
     "email" : "javedk3han199331440@gmail.com"
 }
 
@@ -23,3 +23,14 @@ Content-type: application/json
     "email":"javedk3han199331440@gmail.com",
     "password":"javed@123"
 }
+
+
+### Term and condition API 
+POST http://162.215.253.215:8000/api/signin  HTTP/1.1
+Content-type: application/json
+
+{
+    "email":"javedk3han199331440@gmail.com",
+    "password":"javed@123"
+}
+

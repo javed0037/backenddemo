@@ -6,8 +6,9 @@ const mongoose = require('mongoose'),
 // dbString = dbString + '@' + dbconf.dbcredentials.address;
 // dbString = dbString + ':' + dbconf.dbcredentials.port;
 // dbString = dbString + '/' + dbconf.dbcredentials.database;
+// mongodb.connect('mongodb://javedk3:javed123@ds163781.mlab.com:63781/backend');
 
-const dbString = "mongodb://localhost:27017/E-Commerce";
+const dbString = "mongodb://javedk3:javed123@ds163781.mlab.com:63781/backend";
 mongoose.connect(dbString, {
     useCreateIndex: true,
     useNewUrlParser: true
